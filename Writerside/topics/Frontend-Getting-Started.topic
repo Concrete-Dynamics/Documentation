@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Frontend Getting Started" id="Frontend-Getting-Started">
+
+    <p>
+        To get started with the frontend you need to install the latest version of Node.js. Activate corepack to enable yarn support.
+        We use yarn version 4.3.1.
+    </p>
+
+    <p>
+        This tutorial will show you how to run the project and compile for new features. Make sure you have the backend up and running.
+    </p>
+
+
+    <chapter title="Overview" id="part-one">
+        <p>
+            The package.json contains multiple scripts which either compile, run or debug the project.
+        </p>
+        <p>To run a script, execute the following command in the terminal in the root directory, followed by the exact script name:</p>
+        <code-block lang="bash">
+            yarn "scriptname"
+        </code-block>
+        <p>Before you start make sure you installed all dependencies by running:</p>
+        <code-block lang="bash">
+            yarn install
+        </code-block>
+
+
+    </chapter>
+
+    <chapter title="Running and compiling" id="part-two">
+        <p>To debug and run the webproject:</p>
+
+        <code-block lang="bash">
+            yarn dev
+        </code-block>
+        <p>
+            To compile both the internationalization files found in the public folder, as well as the new graphql schema,
+            run
+        </p>
+        <code-block lang="bash">
+            yarn compile
+        </code-block>
+        <p>
+            To run the production preview, use
+        </p>
+
+        <code-block lang="bash">
+            yarn preview
+        </code-block>
+
+
+    </chapter>
+
+
+    <seealso>
+        <!--Give some related links to how-to articles-->
+    </seealso>
+</topic>
